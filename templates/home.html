@@ -15,6 +15,15 @@
           <p class="geetotsava-image-name">Shri Sugunendra Theertha<br>Swamiji</p>
         </div>
         <h1 class="geetotsava-title kannada-highlight">ಬೃಹತ್ ಗೀತೋತ್ಸವ</h1>
+        <img
+          src="{{ url_for('static', filename='images/home_img/download (1).png') }}"
+          alt=""
+          aria-hidden="true"
+          class="geetotsava-center-flute"
+          loading="eager"
+          width="540"
+          height="150"
+        />
         <div class="geetotsava-image-container">
           <img 
             src="{{ url_for('static', filename='images/home_img/image copy.png') }}" 
@@ -28,7 +37,7 @@
     </div>
     <div class="geetotsava-image-wrapper mobile-only">
       <img 
-        src="{{ url_for('static', filename='images/WhatsApp-Image-2021-02-22-at-12.19.59-PM-1009x1200.jpeg') }}" 
+        src="{{ url_for('static', filename='images/home_img/krishna_pic.jpg') }}" 
         alt="ಬೃಹತ್ ಗೀತೋತ್ಸವ" 
         class="geetotsava-image"
       />
@@ -39,7 +48,7 @@
           <img src="{{ url_for('static', filename='images/udupi-krishna-idol.jpg') }}" alt="Udupi Sri Krishna idol close-up" />
         </figure>
         <figure>
-          <img src="{{ url_for('static', filename='images/WhatsApp-Image-2021-02-22-at-12.19.59-PM-1009x1200.jpeg') }}" alt="Brihat Geetotsava" />
+          <img src="{{ url_for('static', filename='images/home_img/krishna_pic.jpg') }}" alt="Brihat Geetotsava" />
         </figure>
         <figure>
           <img src="{{ url_for('static', filename='images/home_img/WhatsApp Image 2025-11-19 at 11.44.49_74f8dc8c.jpg') }}" alt="Udupi Krishna temple and Madhwa Sarovara" />
@@ -75,8 +84,8 @@
         </li>
       </ul>
       <div class="hero-cta">
-        <a class="btn primary" href="#schedule">
-          <span class="kannada-highlight">{{ hero.cta_primary }}</span>
+        <a class="btn primary" href="{{ url_for('register') }}">
+          <span class="kannada-highlight">Register Now</span>
         </a>
         <a
           class="btn external"
@@ -96,7 +105,7 @@
       />
       <div class="floating-card">
         <p>Prime Minister Shri Narendra Modi</p>
-        <small>Reciting the concluding Bhagavad Gita verses</small>
+        <small>Reciting the concluding Bhagawad Geetha verses</small>
       </div>
     </div>
   </section>
@@ -114,9 +123,9 @@
   <section id="schedule" class="schedule" data-scroll>
     <header>
       <p class="eyebrow">Program Flow</p>
-      <h2>Gita Utsava Timeline</h2>
+      <h2>Geetha Utsava Timeline</h2>
       <p>
-        A month of devotion culminating in the Laksha Kantha Gita Parayana and
+        A month of devotion culminating in the Laksha Kantha Geetha Parayana and
         the Prime Minister’s darshan at Sri Krishna Math.
       </p>
     </header>
@@ -126,7 +135,7 @@
         <span class="timeline-time">{{ item.time }}</span>
         <h3>{{ item.title }}</h3>
         <p>{{ item.description }}</p>
-        <span class="chip">{{ item.category }}</span>
+       
       </article>
       {% endfor %}
     </div>
